@@ -4,3 +4,4 @@
 /server.js
 /*.pug
 /scss/.sass-cache
+/img/.DS_Store
