@@ -1,0 +1,34 @@
+/* Color Declarations */
+$white: #FFF;
+$black: #000;
+$gray: #777;
+$primary: #174163;
+$secondary: #0B2840;
+
+/* Declaring Variables */
+$transparent: transparent;
+
+/* Font Properties */
+$font: 'Lato';
+$statfont: 'Montserrat';
+$light: 300;
+$normal: 400;
+$bold: 700;
+
+* {
+    font-family: $font;
+}
+
+/* Mixins */
+@mixin transition ($seconds) {
+    -webkit-transition: all $seconds;
+    -moz-transition: all $seconds;
+    -ms-transition: all $seconds;
+    transition: all $seconds;
+}
+@mixin cover($cover) {
+    -webkit-background-size: $cover;
+    -moz-background-size: $cover;
+    background-size: $cover;
+    -o-background-size: $cover;
+}

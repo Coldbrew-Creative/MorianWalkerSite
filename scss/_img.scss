@@ -1,0 +1,14 @@
+@import '_variables';
+
+img {
+    -webkit-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+}
+.user {
+    height: 40px;
+    width: auto;
+    position: relative;
+    top: 7px;
+    margin: 0 4px;
+}

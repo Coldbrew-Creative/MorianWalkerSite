@@ -1,0 +1,79 @@
+@import '_variables';
+
+.btn,
+.btn:focus {
+    @include transition(0.4s);
+    outline: 0;
+    border-radius: 100%;
+    border: none;
+}
+.btn-add-note,
+.btn-add-note:focus {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: $primary;
+    width: 50px;
+    height: 50px;
+    span {
+        color: $white;
+        font-weight: $normal;
+    }
+}
+.btn-add-note:hover {
+    background: $secondary;
+    color: $white;
+    -webkit-transform: rotate(360deg);
+}
+.btn-star,
+.btn-star:focus {
+    background: #CCC;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 6px;
+    span {
+        color: $white;
+        position: relative;
+        left: -3.2px;
+        top: -1px;
+    }
+}
+.starred,
+.starred:focus,
+.btn-star:hover {
+    background: $primary;
+}
+.btn-options,
+.btn-options:focus {
+    width: 40px;
+    height: 40px;
+    background: rgba(25,25,25,0.25);
+    position: relative;
+    top: 9px;
+    margin: 0 4px;
+    span {
+        font-size: 14px;
+        color: $white;
+    }
+}
+.btn-options:hover {
+    background: $white;
+    span {
+        color: $gray; 
+    }
+}
+#favNum {
+    @include transition(0.3s);
+    color: $white;
+}
+.notification,
+.notification:focus {
+    @include transition(0.4s);
+    background: $primary;
+    color: $white;
+}
+.notification:hover {
+    background: $white;
+    color: $primary;
+}

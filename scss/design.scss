@@ -1,0 +1,42 @@
+/* Importing Google Font */
+@import 'https://fonts.googleapis.com/css?family=Lato:300,400,700';
+@import 'https://fonts.googleapis.com/css?family=Montserrat:400,700';
+@import '_variables';
+
+/* General CSS Properties */
+body {
+    @include transition(1s);
+    background: #F5F5F5;
+    font-family: $font;
+    font-weight: $light;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+a:focus,
+a:hover {
+    text-decoration: none;
+}
+*.spacious {
+    padding: 75px 50px;
+}
+
+/* Nav bar CSS */
+@import '_navbar';
+
+/* Div Tags CSS */
+@import '_div';
+
+/* Image Tags CSS */
+@import '_img';
+
+/* Button Tags CSS */
+@import '_buttons';
+
+/* Text Properties CSS */
+
+/* Modal CSS */
+@import '_modal';
+
+/* Media Query CSS */
+@import '_media';

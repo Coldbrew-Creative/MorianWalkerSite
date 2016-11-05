@@ -1,0 +1,370 @@
+@import '_variables';
+
+.player-cover {
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 10, 0.45)), rgba(0,0,0,0.45) url('../img/cover.png');
+    height: 100vh;
+    @include cover(cover);
+    margin: 0 auto;
+    .basics-info {
+        position: absolute;
+        bottom: 26%;
+        left: 20px;
+        span.name {
+            background: $primary;
+            color: rgba(255,255,255,0.95);
+            font: $light 35px $statfont;
+            text-transform: uppercase;
+            padding: 16px 18px;
+        }
+        span.sub {
+            position: relative;
+            top: 23px;
+            background: rgba(0,0,0,0.9);
+            color: $white;
+            font: $light 22px $statfont;
+            text-transform: uppercase;
+            margin: 0;
+            padding: 8px 18px;
+        }
+    }
+    .stats-info {
+        position: absolute;
+        bottom: 5%;
+        right: 3%;
+        padding: 0px 15px;
+        background: rgba(0,0,0,0.7);
+        table {
+            margin-top: 25px;
+            background: $transparent;
+            tbody {
+                tr {
+                    td {
+                        border: none;
+                        font: $light 17px $font;
+                        color: rgba(255,255,255,0.9);
+                    }
+                    .bold {
+                        text-align: right;
+                        span {
+                            background: $white;
+                            font: $normal 22px $statfont;
+                            color: $black;
+                            padding: 6px 8px;
+                            position: relative;
+                            top: -3px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    a {
+        text-align: center;
+        position: absolute;
+        bottom: 6%;
+        left: 46%;
+        font: $light 16px $font;
+        color: rgba(255,255,255,0.8);
+    }
+    a:hover {
+        color: $white;
+    }
+}
+.college-cover {
+    background: radial-gradient($primary, $secondary);
+    // padding: 100px 50px;
+    .college-name {
+        background: $white;
+        color: $primary;
+        font: $bold 45px $statfont;
+        text-transform: uppercase;
+        padding: 8px 18px;
+    }
+    p {
+        color: $white;
+        font: $light 20px/28px $font;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    a {
+        @include transition(.4s);
+        color: rgba(255,255,255,0.6);
+        font: $light 18px $statfont;
+        text-transform: uppercase;
+        border: 2px solid rgba(255,255,255,0.6);
+        padding: 12px 20px;
+    }
+    a:hover {
+        border-color: $white;
+        color: $white;
+    }
+    #player-fig {
+        position: absolute;
+        bottom: -30px;
+        left: 50px;
+        img {
+            height: 250px;
+        }
+    }
+}
+.player-info {
+    background: $white;
+    text-align: center;
+    .about {
+        // padding: 50px;
+        span.title {
+            color: $primary;
+            font: $light 25px $statfont;
+            text-transform: uppercase;
+            padding: 12px 0;
+        }
+        p {
+            padding-top: 50px;
+            font: $light 23px/34px $font;
+            color: #555;
+        }
+        span.school {
+            background: $primary;
+            margin-top: 20px;
+            color: $white;
+            font: $bold 30px $font;
+            text-transform: uppercase;
+            line-height: 0;
+            padding: 10px 16px;
+            .class {
+                font: $light 16px $font;
+                text-transform: none;
+                padding-left: 8px;
+                position: relative;
+                top: -6px;
+                color: rgba(255,255,255,0.8);
+            }
+        }
+        span.position {
+            margin: 0;
+            color: $white;
+            background: $black;
+            font: $bold 25px $font;
+            text-transform: uppercase;
+            line-height: 30px;
+            padding: 8px 16px;
+            position: relative;
+            top: 18px;
+        }
+    }
+}
+.video-cover {
+    // padding: 50px;
+    padding-bottom: 50px;
+    background: #222;
+    span {
+        color: #DDD;
+        font: $light 25px $statfont;
+        text-transform: uppercase;
+        padding: 12px 0;
+    }
+    .vid-space {
+        padding: 0 15px;
+    }
+    .video {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 */
+        height: 0;
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 2px solid $white;
+        }
+    }
+    .mini-video {
+        margin-bottom: 18px;
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 2px solid $white;
+        }
+    }
+    img {
+        margin-top: 25px;
+        display: inline-block;
+    }
+    #more-videos {
+        a,
+        a:focus,
+        a:hover {
+            padding: 0;
+            background: none;
+            border: none;
+            img {
+               width: 100%;
+            }
+        }
+    }
+}
+.picture-cover {
+    // padding: 50px;
+    background: #111;
+    span {
+        color: #AAA;
+        font: $light 25px $statfont;
+        text-transform: uppercase;
+        padding: 12px 0;
+    }
+    .gallery {
+        .col-md-3 {
+            padding: 0 7.5px;
+            img {
+                @include transition(.8s);
+                margin: 0;
+                margin: 15px 0;
+                -webkit-filter: brightness(75%);
+                border: 2px solid $white;
+            }
+            img:hover {
+                -webkit-filter: brightness(100%);
+            }
+        }
+    }
+}
+.news-cover {
+    background: #F5F5F5;
+    // padding: 50px;
+    span.title {
+        color: $primary;
+        font: $light 25px $statfont;
+        text-transform: uppercase;
+        padding: 12px 0;
+    }
+    .card {
+        @include transition(.4s);
+        margin: 20px 0 15px;
+        padding: 0;
+        padding-bottom: 20px;
+        border-radius: 4px;
+        background: $white;
+        box-shadow: 0px 8px 14px rgba(0,0,0,0.1);
+        h3 {
+            color: $primary;
+            font: $normal 20px/28px Montserrat;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        p{
+            color: #888;
+            font: $light 15px/22px $font;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+    .card:hover {
+        box-shadow: 0px 8px 14px rgba(0,0,0,0.2);
+    }
+}
+.contact-cover {
+    background: $primary;
+    padding: 50px;
+    span.title {
+        color: $white;
+        font-size: 28px;
+        padding: 12px 0;
+    }
+    .card {
+        @include transition(.3s);
+        background: $secondary;
+        border: none;
+        padding: 16px 5px;
+        margin: 16px 0;
+        border-radius: 4px;
+        .img {
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+            @include transition(.3s);
+            background: url('../img/bolt.jpg');
+            -webkit-filter: brightness(80%);
+            height: 250px;
+            @include cover(cover);
+            margin-bottom: 16px;
+        }
+        a {
+            color: $white;
+            font: $light 16px $font;
+            span {
+
+            }
+        }
+    }
+    .card:hover {
+        .img {
+            -webkit-filter: brightness(100%);
+        }
+    }
+}
+.footer {
+    background: $secondary;
+    padding: 18px;
+    p {
+        color: $white;
+        margin: 0;
+        text-align: center;
+        font: $light 18px $font;
+    }
+}
+.news-cover-xl {
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 10, 0.45)), rgba(0,0,0,0.45) url('../img/player.jpg');
+    height: 30vh;
+    @include cover(cover);
+    margin: 0 auto;
+    .basics-info {
+        position: absolute;
+        bottom: 26%;
+        left: 80px;
+        span.name {
+            background: rgba(0,0,0,0.7);
+            color: $white;
+            font: $light 26px $statfont;
+            text-transform: uppercase;
+            padding: 16px 18px;
+        }
+        span.sub {
+            position: relative;
+            top: 23px;
+            background: $white;
+            color: $black;
+            font: $light 18px $statfont;
+            text-transform: uppercase;
+            margin: 0;
+            padding: 8px 18px;
+        }
+    }
+}
+.main-news {
+    padding: 50px;
+    background: $white;
+    h3 {
+        font: $normal 25px $font;
+    }
+    p {
+        display: inline;
+        color: #555;
+        font: $light 20px/34px $font;
+        padding-bottom: 15px;
+        span {
+            color: $primary;
+            font-weight: $normal;
+        }
+    }
+    img {
+        display: inline;
+        float: left;
+        margin: 10px 20px 20px 0;
+    }
+}

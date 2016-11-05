@@ -1,0 +1,170 @@
+@import '_variables';
+
+.modal-dialog {
+    width: 30%;
+    margin-top: 8%;
+}
+.modal-content {
+    background: $white;
+    border-radius: 0px;
+    padding: 8px 10px 0;
+    border: none;
+    margin: 15px 0;
+    .modal-header {
+        border: none;
+        .close,
+        .close:focus {
+            @include transition(0.4s);
+            padding-right: 15px;
+            outline: 0;
+            span,
+            span:focus {
+                font-weight: $normal;
+            }
+        }
+        #new-date {
+            color: $primary;
+            font-weight: $normal;
+            text-align: left;
+            font-size: 18px;
+            padding-left: 8px;
+        }
+        input,
+        input:focus {
+            border: none;
+            font-size: 30px;
+            font-weight: $bold;
+            color: rgba(25,25,25,0.8);
+            outline: 0;
+        }
+        h2 {
+            font-size: 30px;
+            font-weight: $bold;
+            color: rgba(25,25,25,0.8);
+        }
+        h3 {
+            margin-top: 8px;
+        }
+        p {
+            font-weight: $normal;
+            color: rgba(25,25,25,0.7);
+            font-size: 15px;
+        }
+    }
+    .modal-body {
+        border: none;
+        padding-top: 0;
+        textarea,
+        textarea:focus {
+            border: none;
+            font-weight: $normal;
+            color: rgba(25,25,25,0.7);
+            font-size: 16px;
+            resize: none;
+            outline: 0;
+            width: 100%;
+        }
+        h4 {
+            text-transform: uppercase;
+            font-size: 13px;
+            font-weight: $bold;
+            color: $primary;
+        }
+        p {
+            font-weight: $normal;
+            color: rgba(25,25,25,0.7);
+            font-size: 16px;
+        }
+        img {
+            @include transition(0.3s);
+            -webkit-filter: grayscale(100%);
+            border: none;
+            width: 71px;
+            height: auto;
+            margin: 6px;
+            cursor: pointer;
+        }
+        .wallpaper,
+        .wallpaper:hover {
+            -webkit-filter: grayscale(0%);
+            border-color: $primary;
+        }
+        img:hover {
+            -webkit-filter: grayscale(0%);
+            border-color: $white;
+        }
+        .btn-view,
+        .btn-view:focus {
+            text-transform: uppercase;
+            font-size: 13px;
+            font-weight: $bold;
+            color: #BBB;
+            background: transparent;
+            outline: 0;
+            text-align: left;
+            border-radius: 2px;
+        }
+        .btn-view:hover {
+            background: #F5F5F5;
+            color: $gray;
+        }
+        .view-selected,
+        .view-selected:focus,
+        .view-selected:hover {
+            background: #EEE;
+            color: $gray;
+        }
+        .display-left {
+            margin-left: -20px;
+        }
+        .display-right {
+            margin-left: 0px;
+            margin-right: -20px;
+        }
+    }
+    .modal-footer {
+        border-color: #EEE;
+        .btn-note,
+        .btn-note:focus,
+        .btn-cancel,
+        .btn-cancel:focus {
+            text-transform: uppercase;
+            font-size: 13px;
+            font-weight: $bold;
+            background: none;
+            border-radius: 3px;
+            border: none;
+
+        }
+        .btn-note {
+            color: $primary;
+        }
+        .btn-cancel {
+            color: #CCC;
+        }
+        .btn-note:hover {
+            background: #EEE;
+            color: $secondary;
+        }
+        .btn-cancel:hover {
+            color: #888;
+        }
+        #delete {
+            border-radius: 100%;
+            position: relative;
+            top: -6px;
+            width: 38px;
+            height: 38px;
+            float: left;
+            span {
+                position: relative;
+                top: -1px;
+                left: -1px;
+                img {
+                    height: 15px;
+                    width: 15px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,85 @@
+@import '_variables';
+
+/* Media Query */
+@media(max-width: 732px) {
+    .navbar {
+        .navbar-brand {
+            position: relative;
+            top: 16px;
+        }
+    }
+    .player-cover {
+        .basics-info {
+            right: 3%;
+            bottom: 55%;
+            span.name {
+                font-size: 26px;
+            }
+            span.sub {
+                font-size: 16px;
+            }
+        }
+        .stats-info {
+            position: absolute;
+            left: 20px;
+            right: auto;
+        }
+    }
+    .college-cover {
+        .college-name {
+            font-size: 14px;
+        }
+        a {
+            font-size: 13px;
+            padding: 9px 14px;
+        }
+    }
+    .player-info {
+        .about {
+            span.school {
+                font-size: 16px;
+                span.class {
+                    top: -1px;
+                    font-size: 12px;
+                }
+            }
+            span.position {
+                top: 10px;
+                font-size: 14px;
+            }
+            p {
+                font-size: 20px;
+            }
+        }
+    }
+    .video-cover {
+        #more-videos {
+            span {
+                display: inline-block;
+                padding-top: 35px;
+            }
+        }
+        padding-bottom: 50px;
+    }
+    .picture-cover {
+        .gallery .pictures {
+            max-width: 100%;
+        }
+    }
+    .news-cover-xl {
+        .basics-info {
+            left: 30px;
+            span.name {
+                font-size: 15px;
+            }
+            span.sub {
+                font-size: 13px;
+            }
+        }
+    }
+    .news-cover {
+        .card {
+            padding-top: 8px;
+        }
+    }
+}

@@ -1,0 +1,114 @@
+@import '_variables';
+
+.navbar, 
+.navbar-default {
+    z-index: 1;
+    @include transition(.3s);
+    .navbar-header {
+        a {
+            padding: 0;
+            margin-right: 40px;
+        }
+    }
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0));
+    box-shadow: none;
+    border: none;
+    padding: 12px 20px;
+    padding-left: 6%;
+    padding-right: 6%;
+    a, 
+    a:focus,
+    a:hover {
+        border: none;
+        text-decoration: none;
+    }
+    .navbar-collapse {
+        border-color: rgba(255,255,255,0.1);
+        margin-right: 15px;
+    }
+    .navbar-toggle,
+    .navbar-toggle:focus {
+        border: none;
+        position: relative;
+        left: 0px;
+        span.icon-bar {
+            background: $white;
+        }
+    }
+    .navbar-toggle:hover {
+        background: rgba(0,0,0,0.2);
+    }
+    .toggle-on {
+        border: none;
+        position: relative;
+        left: 0px;
+        span.icon-bar {
+            background: $primary;
+        }
+    }
+    .navbar-brand {
+        @include transition(0.8s);
+        height: auto;
+        margin-bottom: 6px;
+        position: relative;
+        top: 8px;
+        img {
+            height: 36px;
+        }
+        h2 {
+            font: $light 16px $statfont;
+            margin: 0;
+            text-transform: uppercase;
+            color: $white;
+        }
+    }
+    .navbar-nav {
+        li {
+            background: $transparent;
+            font: $bold 12px/22px $statfont;
+            text-transform: uppercase;
+            padding: 0px 2px;
+            margin-top: 0px;
+            a,
+            a:focus {
+                @include transition(.5s);
+                background: $transparent;
+                padding: 7px 18px;
+                border-radius: 35px;
+                color: rgba(255,255,255,0.6);
+                border: 1px solid $transparent;
+            }
+            a:hover {
+                color: $white !important;
+                background: rgba(0,0,0,0.5);
+            }
+            .active,
+            .active:focus  {
+                color: $white !important;
+                background: $primary;
+            }
+        }
+    }
+}
+
+.scrolled-bar {
+    background: $white;
+    box-shadow: 0 2px 3px rgba(0,0,0,.1);
+    .navbar-nav {
+        li {
+            a,
+            a:focus {
+                color: #AAA;
+            }
+            a:hover {
+                color: $white !important;
+                background: $primary;
+            }
+        }
+    }
+    .navbar-brand {
+        h2 {
+            color: #215580;
+        }
+    }
+}
