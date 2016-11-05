@@ -159,7 +159,7 @@ a:hover {
 
 /* Mixins */
 .player-cover {
-  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 10, 0.45)), rgba(0, 0, 0, 0.45) url("../img/cover.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 10, 0.45)), rgba(0, 0, 0, 0.45) url("../img/cover.jpg");
   height: 100vh;
   -webkit-background-size: cover;
   -moz-background-size: cover;
