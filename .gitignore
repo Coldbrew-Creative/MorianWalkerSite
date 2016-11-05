@@ -3,4 +3,4 @@
 /node_modules
 /server.js
 /*.pug
-/scss/*.scss
+/scss/.sass-cache
