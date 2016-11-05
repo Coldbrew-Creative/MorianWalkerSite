@@ -1,0 +1,814 @@
+/* Importing Google Font */
+@import "https://fonts.googleapis.com/css?family=Lato:300,400,700";
+@import "https://fonts.googleapis.com/css?family=Montserrat:400,700";
+/* Color Declarations */
+/* Declaring Variables */
+/* Font Properties */
+* {
+  font-family: "Lato"; }
+
+/* Mixins */
+/* General CSS Properties */
+body {
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  transition: all 1s;
+  background: #F5F5F5;
+  font-family: "Lato";
+  font-weight: 300;
+  height: 100vh;
+  width: 100%;
+  position: relative; }
+
+a:focus,
+a:hover {
+  text-decoration: none; }
+
+*.spacious {
+  padding: 75px 50px; }
+
+/* Nav bar CSS */
+/* Color Declarations */
+/* Declaring Variables */
+/* Font Properties */
+* {
+  font-family: "Lato"; }
+
+/* Mixins */
+.navbar,
+.navbar-default {
+  z-index: 1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent);
+  box-shadow: none;
+  border: none;
+  padding: 12px 20px;
+  padding-left: 6%;
+  padding-right: 6%; }
+  .navbar .navbar-header a,
+  .navbar-default .navbar-header a {
+    padding: 0;
+    margin-right: 40px; }
+  .navbar a,
+  .navbar a:focus,
+  .navbar a:hover,
+  .navbar-default a,
+  .navbar-default a:focus,
+  .navbar-default a:hover {
+    border: none;
+    text-decoration: none; }
+  .navbar .navbar-collapse,
+  .navbar-default .navbar-collapse {
+    border-color: rgba(255, 255, 255, 0.1);
+    margin-right: 15px; }
+  .navbar .navbar-toggle,
+  .navbar .navbar-toggle:focus,
+  .navbar-default .navbar-toggle,
+  .navbar-default .navbar-toggle:focus {
+    border: none;
+    position: relative;
+    left: 0px; }
+    .navbar .navbar-toggle span.icon-bar,
+    .navbar .navbar-toggle:focus span.icon-bar,
+    .navbar-default .navbar-toggle span.icon-bar,
+    .navbar-default .navbar-toggle:focus span.icon-bar {
+      background: #FFF; }
+  .navbar .navbar-toggle:hover,
+  .navbar-default .navbar-toggle:hover {
+    background: rgba(0, 0, 0, 0.2); }
+  .navbar .toggle-on,
+  .navbar-default .toggle-on {
+    border: none;
+    position: relative;
+    left: 0px; }
+    .navbar .toggle-on span.icon-bar,
+    .navbar-default .toggle-on span.icon-bar {
+      background: #174163; }
+  .navbar .navbar-brand,
+  .navbar-default .navbar-brand {
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    transition: all 0.8s;
+    height: auto;
+    margin-bottom: 6px;
+    position: relative;
+    top: 8px; }
+    .navbar .navbar-brand img,
+    .navbar-default .navbar-brand img {
+      height: 36px; }
+    .navbar .navbar-brand h2,
+    .navbar-default .navbar-brand h2 {
+      font: 300 16px "Montserrat";
+      margin: 0;
+      text-transform: uppercase;
+      color: #FFF; }
+  .navbar .navbar-nav li,
+  .navbar-default .navbar-nav li {
+    background: transparent;
+    font: 700 12px/22px "Montserrat";
+    text-transform: uppercase;
+    padding: 0px 2px;
+    margin-top: 0px; }
+    .navbar .navbar-nav li a,
+    .navbar .navbar-nav li a:focus,
+    .navbar-default .navbar-nav li a,
+    .navbar-default .navbar-nav li a:focus {
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      -ms-transition: all 0.5s;
+      transition: all 0.5s;
+      background: transparent;
+      padding: 7px 18px;
+      border-radius: 35px;
+      color: rgba(255, 255, 255, 0.6);
+      border: 1px solid transparent; }
+    .navbar .navbar-nav li a:hover,
+    .navbar-default .navbar-nav li a:hover {
+      color: #FFF !important;
+      background: rgba(0, 0, 0, 0.5); }
+    .navbar .navbar-nav li .active,
+    .navbar .navbar-nav li .active:focus,
+    .navbar-default .navbar-nav li .active,
+    .navbar-default .navbar-nav li .active:focus {
+      color: #FFF !important;
+      background: #174163; }
+
+.scrolled-bar {
+  background: #FFF;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1); }
+  .scrolled-bar .navbar-nav li a,
+  .scrolled-bar .navbar-nav li a:focus {
+    color: #AAA; }
+  .scrolled-bar .navbar-nav li a:hover {
+    color: #FFF !important;
+    background: #174163; }
+  .scrolled-bar .navbar-brand h2 {
+    color: #215580; }
+
+/* Div Tags CSS */
+/* Color Declarations */
+/* Declaring Variables */
+/* Font Properties */
+* {
+  font-family: "Lato"; }
+
+/* Mixins */
+.player-cover {
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 10, 0.45)), rgba(0, 0, 0, 0.45) url("../img/cover.png");
+  height: 100vh;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  margin: 0 auto; }
+  .player-cover .basics-info {
+    position: absolute;
+    bottom: 26%;
+    left: 20px; }
+    .player-cover .basics-info span.name {
+      background: #174163;
+      color: rgba(255, 255, 255, 0.95);
+      font: 300 35px "Montserrat";
+      text-transform: uppercase;
+      padding: 16px 18px; }
+    .player-cover .basics-info span.sub {
+      position: relative;
+      top: 23px;
+      background: rgba(0, 0, 0, 0.9);
+      color: #FFF;
+      font: 300 22px "Montserrat";
+      text-transform: uppercase;
+      margin: 0;
+      padding: 8px 18px; }
+  .player-cover .stats-info {
+    position: absolute;
+    bottom: 5%;
+    right: 3%;
+    padding: 0px 15px;
+    background: rgba(0, 0, 0, 0.7); }
+    .player-cover .stats-info table {
+      margin-top: 25px;
+      background: transparent; }
+      .player-cover .stats-info table tbody tr td {
+        border: none;
+        font: 300 17px "Lato";
+        color: rgba(255, 255, 255, 0.9); }
+      .player-cover .stats-info table tbody tr .bold {
+        text-align: right; }
+        .player-cover .stats-info table tbody tr .bold span {
+          background: #FFF;
+          font: 400 22px "Montserrat";
+          color: #000;
+          padding: 6px 8px;
+          position: relative;
+          top: -3px; }
+  .player-cover a {
+    text-align: center;
+    position: absolute;
+    bottom: 6%;
+    left: 46%;
+    font: 300 16px "Lato";
+    color: rgba(255, 255, 255, 0.8); }
+  .player-cover a:hover {
+    color: #FFF; }
+
+.college-cover {
+  background: radial-gradient(#174163, #0B2840); }
+  .college-cover .college-name {
+    background: #FFF;
+    color: #174163;
+    font: 700 45px "Montserrat";
+    text-transform: uppercase;
+    padding: 8px 18px; }
+  .college-cover p {
+    color: #FFF;
+    font: 300 20px/28px "Lato";
+    padding-top: 30px;
+    padding-bottom: 30px; }
+  .college-cover a {
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    transition: all 0.4s;
+    color: rgba(255, 255, 255, 0.6);
+    font: 300 18px "Montserrat";
+    text-transform: uppercase;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    padding: 12px 20px; }
+  .college-cover a:hover {
+    border-color: #FFF;
+    color: #FFF; }
+  .college-cover #player-fig {
+    position: absolute;
+    bottom: -30px;
+    left: 50px; }
+    .college-cover #player-fig img {
+      height: 250px; }
+
+.player-info {
+  background: #FFF;
+  text-align: center; }
+  .player-info .about span.title {
+    color: #174163;
+    font: 300 25px "Montserrat";
+    text-transform: uppercase;
+    padding: 12px 0; }
+  .player-info .about p {
+    padding-top: 50px;
+    font: 300 23px/34px "Lato";
+    color: #555; }
+  .player-info .about span.school {
+    background: #174163;
+    margin-top: 20px;
+    color: #FFF;
+    font: 700 30px "Lato";
+    text-transform: uppercase;
+    line-height: 0;
+    padding: 10px 16px; }
+    .player-info .about span.school .class {
+      font: 300 16px "Lato";
+      text-transform: none;
+      padding-left: 8px;
+      position: relative;
+      top: -6px;
+      color: rgba(255, 255, 255, 0.8); }
+  .player-info .about span.position {
+    margin: 0;
+    color: #FFF;
+    background: #000;
+    font: 700 25px "Lato";
+    text-transform: uppercase;
+    line-height: 30px;
+    padding: 8px 16px;
+    position: relative;
+    top: 18px; }
+
+.video-cover {
+  padding-bottom: 50px;
+  background: #222; }
+  .video-cover span {
+    color: #DDD;
+    font: 300 25px "Montserrat";
+    text-transform: uppercase;
+    padding: 12px 0; }
+  .video-cover .vid-space {
+    padding: 0 15px; }
+  .video-cover .video {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    height: 0; }
+    .video-cover .video iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 2px solid #FFF; }
+  .video-cover .mini-video {
+    margin-bottom: 18px;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0; }
+    .video-cover .mini-video iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 2px solid #FFF; }
+  .video-cover img {
+    margin-top: 25px;
+    display: inline-block; }
+  .video-cover #more-videos a,
+  .video-cover #more-videos a:focus,
+  .video-cover #more-videos a:hover {
+    padding: 0;
+    background: none;
+    border: none; }
+    .video-cover #more-videos a img,
+    .video-cover #more-videos a:focus img,
+    .video-cover #more-videos a:hover img {
+      width: 100%; }
+
+.picture-cover {
+  background: #111; }
+  .picture-cover span {
+    color: #AAA;
+    font: 300 25px "Montserrat";
+    text-transform: uppercase;
+    padding: 12px 0; }
+  .picture-cover .gallery .col-md-3 {
+    padding: 0 7.5px; }
+    .picture-cover .gallery .col-md-3 img {
+      -webkit-transition: all 0.8s;
+      -moz-transition: all 0.8s;
+      -ms-transition: all 0.8s;
+      transition: all 0.8s;
+      margin: 0;
+      margin: 15px 0;
+      -webkit-filter: brightness(75%);
+      border: 2px solid #FFF; }
+    .picture-cover .gallery .col-md-3 img:hover {
+      -webkit-filter: brightness(100%); }
+
+.news-cover {
+  background: #F5F5F5; }
+  .news-cover span.title {
+    color: #174163;
+    font: 300 25px "Montserrat";
+    text-transform: uppercase;
+    padding: 12px 0; }
+  .news-cover .card {
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    transition: all 0.4s;
+    margin: 20px 0 15px;
+    padding: 0;
+    padding-bottom: 20px;
+    border-radius: 4px;
+    background: #FFF;
+    box-shadow: 0px 8px 14px rgba(0, 0, 0, 0.1); }
+    .news-cover .card h3 {
+      color: #174163;
+      font: 400 20px/28px Montserrat;
+      padding-left: 20px;
+      padding-right: 20px; }
+    .news-cover .card p {
+      color: #888;
+      font: 300 15px/22px "Lato";
+      padding-left: 20px;
+      padding-right: 20px; }
+  .news-cover .card:hover {
+    box-shadow: 0px 8px 14px rgba(0, 0, 0, 0.2); }
+
+.contact-cover {
+  background: #174163;
+  padding: 50px; }
+  .contact-cover span.title {
+    color: #FFF;
+    font-size: 28px;
+    padding: 12px 0; }
+  .contact-cover .card {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+    background: #0B2840;
+    border: none;
+    padding: 16px 5px;
+    margin: 16px 0;
+    border-radius: 4px; }
+    .contact-cover .card .img {
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      transition: all 0.3s;
+      background: url("../img/bolt.jpg");
+      -webkit-filter: brightness(80%);
+      height: 250px;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      background-size: cover;
+      -o-background-size: cover;
+      margin-bottom: 16px; }
+    .contact-cover .card a {
+      color: #FFF;
+      font: 300 16px "Lato"; }
+  .contact-cover .card:hover .img {
+    -webkit-filter: brightness(100%); }
+
+.footer {
+  background: #0B2840;
+  padding: 18px; }
+  .footer p {
+    color: #FFF;
+    margin: 0;
+    text-align: center;
+    font: 300 18px "Lato"; }
+
+.news-cover-xl {
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 10, 0.45)), rgba(0, 0, 0, 0.45) url("../img/player.jpg");
+  height: 30vh;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  margin: 0 auto; }
+  .news-cover-xl .basics-info {
+    position: absolute;
+    bottom: 26%;
+    left: 80px; }
+    .news-cover-xl .basics-info span.name {
+      background: rgba(0, 0, 0, 0.7);
+      color: #FFF;
+      font: 300 26px "Montserrat";
+      text-transform: uppercase;
+      padding: 16px 18px; }
+    .news-cover-xl .basics-info span.sub {
+      position: relative;
+      top: 23px;
+      background: #FFF;
+      color: #000;
+      font: 300 18px "Montserrat";
+      text-transform: uppercase;
+      margin: 0;
+      padding: 8px 18px; }
+
+.main-news {
+  padding: 50px;
+  background: #FFF; }
+  .main-news h3 {
+    font: 400 25px "Lato"; }
+  .main-news p {
+    display: inline;
+    color: #555;
+    font: 300 20px/34px "Lato";
+    padding-bottom: 15px; }
+    .main-news p span {
+      color: #174163;
+      font-weight: 400; }
+  .main-news img {
+    display: inline;
+    float: left;
+    margin: 10px 20px 20px 0; }
+
+/* Image Tags CSS */
+/* Color Declarations */
+/* Declaring Variables */
+/* Font Properties */
+* {
+  font-family: "Lato"; }
+
+/* Mixins */
+img {
+  -webkit-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none; }
+
+.user {
+  height: 40px;
+  width: auto;
+  position: relative;
+  top: 7px;
+  margin: 0 4px; }
+
+/* Button Tags CSS */
+/* Color Declarations */
+/* Declaring Variables */
+/* Font Properties */
+* {
+  font-family: "Lato"; }
+
+/* Mixins */
+.btn,
+.btn:focus {
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  transition: all 0.4s;
+  outline: 0;
+  border-radius: 100%;
+  border: none; }
+
+.btn-add-note,
+.btn-add-note:focus {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #174163;
+  width: 50px;
+  height: 50px; }
+  .btn-add-note span,
+  .btn-add-note:focus span {
+    color: #FFF;
+    font-weight: 400; }
+
+.btn-add-note:hover {
+  background: #0B2840;
+  color: #FFF;
+  -webkit-transform: rotate(360deg); }
+
+.btn-star,
+.btn-star:focus {
+  background: #CCC;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: 6px; }
+  .btn-star span,
+  .btn-star:focus span {
+    color: #FFF;
+    position: relative;
+    left: -3.2px;
+    top: -1px; }
+
+.starred,
+.starred:focus,
+.btn-star:hover {
+  background: #174163; }
+
+.btn-options,
+.btn-options:focus {
+  width: 40px;
+  height: 40px;
+  background: rgba(25, 25, 25, 0.25);
+  position: relative;
+  top: 9px;
+  margin: 0 4px; }
+  .btn-options span,
+  .btn-options:focus span {
+    font-size: 14px;
+    color: #FFF; }
+
+.btn-options:hover {
+  background: #FFF; }
+  .btn-options:hover span {
+    color: #777; }
+
+#favNum {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
+  color: #FFF; }
+
+.notification,
+.notification:focus {
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  transition: all 0.4s;
+  background: #174163;
+  color: #FFF; }
+
+.notification:hover {
+  background: #FFF;
+  color: #174163; }
+
+/* Text Properties CSS */
+/* Modal CSS */
+/* Color Declarations */
+/* Declaring Variables */
+/* Font Properties */
+* {
+  font-family: "Lato"; }
+
+/* Mixins */
+.modal-dialog {
+  width: 30%;
+  margin-top: 8%; }
+
+.modal-content {
+  background: #FFF;
+  border-radius: 0px;
+  padding: 8px 10px 0;
+  border: none;
+  margin: 15px 0; }
+  .modal-content .modal-header {
+    border: none; }
+    .modal-content .modal-header .close,
+    .modal-content .modal-header .close:focus {
+      -webkit-transition: all 0.4s;
+      -moz-transition: all 0.4s;
+      -ms-transition: all 0.4s;
+      transition: all 0.4s;
+      padding-right: 15px;
+      outline: 0; }
+      .modal-content .modal-header .close span,
+      .modal-content .modal-header .close span:focus,
+      .modal-content .modal-header .close:focus span,
+      .modal-content .modal-header .close:focus span:focus {
+        font-weight: 400; }
+    .modal-content .modal-header #new-date {
+      color: #174163;
+      font-weight: 400;
+      text-align: left;
+      font-size: 18px;
+      padding-left: 8px; }
+    .modal-content .modal-header input,
+    .modal-content .modal-header input:focus {
+      border: none;
+      font-size: 30px;
+      font-weight: 700;
+      color: rgba(25, 25, 25, 0.8);
+      outline: 0; }
+    .modal-content .modal-header h2 {
+      font-size: 30px;
+      font-weight: 700;
+      color: rgba(25, 25, 25, 0.8); }
+    .modal-content .modal-header h3 {
+      margin-top: 8px; }
+    .modal-content .modal-header p {
+      font-weight: 400;
+      color: rgba(25, 25, 25, 0.7);
+      font-size: 15px; }
+  .modal-content .modal-body {
+    border: none;
+    padding-top: 0; }
+    .modal-content .modal-body textarea,
+    .modal-content .modal-body textarea:focus {
+      border: none;
+      font-weight: 400;
+      color: rgba(25, 25, 25, 0.7);
+      font-size: 16px;
+      resize: none;
+      outline: 0;
+      width: 100%; }
+    .modal-content .modal-body h4 {
+      text-transform: uppercase;
+      font-size: 13px;
+      font-weight: 700;
+      color: #174163; }
+    .modal-content .modal-body p {
+      font-weight: 400;
+      color: rgba(25, 25, 25, 0.7);
+      font-size: 16px; }
+    .modal-content .modal-body img {
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      transition: all 0.3s;
+      -webkit-filter: grayscale(100%);
+      border: none;
+      width: 71px;
+      height: auto;
+      margin: 6px;
+      cursor: pointer; }
+    .modal-content .modal-body .wallpaper,
+    .modal-content .modal-body .wallpaper:hover {
+      -webkit-filter: grayscale(0%);
+      border-color: #174163; }
+    .modal-content .modal-body img:hover {
+      -webkit-filter: grayscale(0%);
+      border-color: #FFF; }
+    .modal-content .modal-body .btn-view,
+    .modal-content .modal-body .btn-view:focus {
+      text-transform: uppercase;
+      font-size: 13px;
+      font-weight: 700;
+      color: #BBB;
+      background: transparent;
+      outline: 0;
+      text-align: left;
+      border-radius: 2px; }
+    .modal-content .modal-body .btn-view:hover {
+      background: #F5F5F5;
+      color: #777; }
+    .modal-content .modal-body .view-selected,
+    .modal-content .modal-body .view-selected:focus,
+    .modal-content .modal-body .view-selected:hover {
+      background: #EEE;
+      color: #777; }
+    .modal-content .modal-body .display-left {
+      margin-left: -20px; }
+    .modal-content .modal-body .display-right {
+      margin-left: 0px;
+      margin-right: -20px; }
+  .modal-content .modal-footer {
+    border-color: #EEE; }
+    .modal-content .modal-footer .btn-note,
+    .modal-content .modal-footer .btn-note:focus,
+    .modal-content .modal-footer .btn-cancel,
+    .modal-content .modal-footer .btn-cancel:focus {
+      text-transform: uppercase;
+      font-size: 13px;
+      font-weight: 700;
+      background: none;
+      border-radius: 3px;
+      border: none; }
+    .modal-content .modal-footer .btn-note {
+      color: #174163; }
+    .modal-content .modal-footer .btn-cancel {
+      color: #CCC; }
+    .modal-content .modal-footer .btn-note:hover {
+      background: #EEE;
+      color: #0B2840; }
+    .modal-content .modal-footer .btn-cancel:hover {
+      color: #888; }
+    .modal-content .modal-footer #delete {
+      border-radius: 100%;
+      position: relative;
+      top: -6px;
+      width: 38px;
+      height: 38px;
+      float: left; }
+      .modal-content .modal-footer #delete span {
+        position: relative;
+        top: -1px;
+        left: -1px; }
+        .modal-content .modal-footer #delete span img {
+          height: 15px;
+          width: 15px; }
+
+/* Media Query CSS */
+/* Color Declarations */
+/* Declaring Variables */
+/* Font Properties */
+* {
+  font-family: "Lato"; }
+
+/* Mixins */
+/* Media Query */
+@media (max-width: 732px) {
+  .navbar .navbar-brand {
+    position: relative;
+    top: 16px; }
+
+  .player-cover .basics-info {
+    right: 3%;
+    bottom: 55%; }
+    .player-cover .basics-info span.name {
+      font-size: 26px; }
+    .player-cover .basics-info span.sub {
+      font-size: 16px; }
+  .player-cover .stats-info {
+    position: absolute;
+    left: 20px;
+    right: auto; }
+
+  .college-cover .college-name {
+    font-size: 14px; }
+  .college-cover a {
+    font-size: 13px;
+    padding: 9px 14px; }
+
+  .player-info .about span.school {
+    font-size: 16px; }
+    .player-info .about span.school span.class {
+      top: -1px;
+      font-size: 12px; }
+  .player-info .about span.position {
+    top: 10px;
+    font-size: 14px; }
+  .player-info .about p {
+    font-size: 20px; }
+
+  .video-cover {
+    padding-bottom: 50px; }
+    .video-cover #more-videos span {
+      display: inline-block;
+      padding-top: 35px; }
+
+  .picture-cover .gallery .pictures {
+    max-width: 100%; }
+
+  .news-cover-xl .basics-info {
+    left: 30px; }
+    .news-cover-xl .basics-info span.name {
+      font-size: 15px; }
+    .news-cover-xl .basics-info span.sub {
+      font-size: 13px; }
+
+  .news-cover .card {
+    padding-top: 8px; } }
+
+/*# sourceMappingURL=design.css.map */
