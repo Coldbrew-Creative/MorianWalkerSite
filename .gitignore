@@ -1,0 +1,6 @@
+# Local DS Files
+/.DS_Store
+/node_modules
+/server.js
+/*.pug
+/scss/*.scss
