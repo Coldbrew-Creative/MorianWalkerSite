@@ -107,6 +107,12 @@ a:hover {
       margin: 0;
       text-transform: uppercase;
       color: #FFF; }
+    .navbar .navbar-brand span img,
+    .navbar-default .navbar-brand span img {
+      height: 25px;
+      margin-right: 10px;
+      position: relative;
+      top: -3px; }
   .navbar .navbar-nav li,
   .navbar-default .navbar-nav li {
     background: transparent;
@@ -763,17 +769,20 @@ img {
     position: relative;
     top: 16px; }
 
-  .player-cover .basics-info {
-    right: 3%;
-    bottom: 55%; }
-    .player-cover .basics-info span.name {
-      font-size: 26px; }
-    .player-cover .basics-info span.sub {
-      font-size: 16px; }
-  .player-cover .stats-info {
-    position: absolute;
-    left: 20px;
-    right: auto; }
+  .player-cover {
+    background-attachment: scroll;
+    background-position: center center; }
+    .player-cover .basics-info {
+      right: 3%;
+      bottom: 55%; }
+      .player-cover .basics-info span.name {
+        font-size: 26px; }
+      .player-cover .basics-info span.sub {
+        font-size: 16px; }
+    .player-cover .stats-info {
+      position: absolute;
+      left: 20px;
+      right: auto; }
 
   .college-cover .college-name {
     font-size: 14px; }

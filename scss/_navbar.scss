@@ -1,6 +1,6 @@
 @import '_variables';
 
-.navbar, 
+.navbar,
 .navbar-default {
     z-index: 1;
     @include transition(.3s);
@@ -16,7 +16,7 @@
     padding: 12px 20px;
     padding-left: 6%;
     padding-right: 6%;
-    a, 
+    a,
     a:focus,
     a:hover {
         border: none;
@@ -60,6 +60,14 @@
             margin: 0;
             text-transform: uppercase;
             color: $white;
+        }
+        span {
+            img {
+                height: 25px;
+                margin-right: 10px;
+                position: relative;
+                top: -3px;
+            }
         }
     }
     .navbar-nav {

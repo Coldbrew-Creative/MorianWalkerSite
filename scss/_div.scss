@@ -1,7 +1,7 @@
 @import '_variables';
 
 .player-cover {
-    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 10, 0.45)), rgba(0,0,0,0.45) url('../img/cover.png');
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 10, 0.45)), rgba(0,0,0,0.45) url('../img/cover.jpg');
     height: 100vh;
     @include cover(cover);
     margin: 0 auto;
