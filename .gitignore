@@ -5,3 +5,5 @@
 /*.pug
 /scss/.sass-cache
 /img/.DS_Store
+/news/*.pug
+/scss/
