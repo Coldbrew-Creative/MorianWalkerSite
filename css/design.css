@@ -809,11 +809,14 @@ img {
     max-width: 100%; }
 
   .news-cover-xl .basics-info {
-    left: 30px; }
+    padding-left: 0em; }
     .news-cover-xl .basics-info span.name {
-      font-size: 15px; }
+      font: 300 27px/28px "Montserrat"; }
     .news-cover-xl .basics-info span.sub {
       font-size: 13px; }
+
+  .main-news iframe {
+    max-width: 100%; }
 
   .news-cover .card {
     padding-top: 8px; } }
