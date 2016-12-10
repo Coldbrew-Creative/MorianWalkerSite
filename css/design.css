@@ -442,23 +442,21 @@ a:hover {
     font: 300 18px "Lato"; }
 
 .news-cover-xl {
-  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 10, 0.45)), rgba(0, 0, 0, 0.45) url("../img/player.jpg");
-  height: 30vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 10, 0.6)), rgba(0, 0, 0, 0.6) url("../img/player.jpg");
+  height: 400px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
   margin: 0 auto; }
   .news-cover-xl .basics-info {
-    position: absolute;
-    bottom: 26%;
-    left: 80px; }
+    padding-top: 8em;
+    padding-left: 14em; }
     .news-cover-xl .basics-info span.name {
-      background: rgba(0, 0, 0, 0.7);
       color: #FFF;
-      font: 300 26px "Montserrat";
+      font: 300 35px/45px "Montserrat";
       text-transform: uppercase;
-      padding: 16px 18px; }
+      padding: 16px 0px; }
     .news-cover-xl .basics-info span.sub {
       position: relative;
       top: 23px;
