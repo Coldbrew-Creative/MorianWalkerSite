@@ -401,12 +401,23 @@ a:hover {
     color: #FFF;
     font-size: 28px;
     padding: 12px 0; }
+  .contact-cover .text-center .footer-logo {
+    height: 70px;
+    margin: 0 auto;
+  }
+  .contact-cover .text-center h3 {
+    color: rgba(255,255,255,0.7);
+    font: 100 25px 'Lato';
+    margin-bottom: 16px;
+    position: relative;
+    top: -7px;
+  }
   .contact-cover .card {
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
     transition: all 0.3s;
-    background: #0B2840;
+    background: #10304A;
     border: none;
     padding: 16px 5px;
     margin: 16px 0;
@@ -433,13 +444,24 @@ a:hover {
     -webkit-filter: brightness(100%); }
 
 .footer {
-  background: #0B2840;
-  padding: 18px; }
-  .footer p {
+  background: #10304A;
+  padding: 24px 18px; }
+  .footer .col-md-4 p {
     color: #FFF;
     margin: 0;
     text-align: center;
     font: 300 18px "Lato"; }
+  .footer .col-md-2 a {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+    color: rgba(255,255,255,0.5);
+    font: 300 14px 'Lato';
+  }
+  .footer .col-md-2 a:hover {
+    color: #FFF;
+  }
 
 .news-cover-xl {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 10, 0.6)), rgba(0, 0, 0, 0.6) url("../img/player.jpg");
