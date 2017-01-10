@@ -451,16 +451,18 @@ a:hover {
     margin: 0;
     text-align: center;
     font: 300 18px "Lato"; }
-  .footer .col-md-2 a {
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    transition: all 0.3s;
-    color: rgba(255,255,255,0.5);
-    font: 300 14px 'Lato';
+  .footer .col-md-2 a img {
+    height: 30px;
   }
-  .footer .col-md-2 a:hover {
-    color: #FFF;
+  .footer .col-md-2 a .logo-247 {
+    position: relative;
+    top: 3px;
+    height: 15px;
+  }
+  .footer .col-md-2 a .logo-espn {
+    position: relative;
+    top: 3px;
+    height: 20px;
   }
 
 .news-cover-xl {
