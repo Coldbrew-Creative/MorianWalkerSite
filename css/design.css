@@ -452,6 +452,7 @@ a:hover {
     text-align: center;
     font: 300 18px "Lato"; }
   .footer .col-md-2 a img {
+    padding: 4px;
     height: 30px;
   }
   .footer .col-md-2 a .logo-247 {
